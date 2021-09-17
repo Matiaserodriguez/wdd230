@@ -1,0 +1,49 @@
+header {
+  background-color: #2565ae;
+  height: 125px;
+  border-radius: 25px;
+}
+
+img {
+  width: 200px;
+  float: right;
+  padding: 1rem 1rem;
+  border-radius: 50px;
+  filter: drop-shadow(5px 5px 4px rgb(37, 37, 37));
+}
+
+footer {
+  text-align: center;
+  border-radius: 25px;
+  background-color: #2565ae;
+  padding: 0.5rem;
+}
+
+h1 {
+  padding-left: 50px;
+  line-height: 125px;
+  color: white;
+  font-size: 40px;
+}
+
+h2 {
+  padding-left: 50px;
+}
+
+ul {
+  padding-left: 50px;
+}
+
+.last-updated {
+  color: rgba(5, 205, 255, 0.699);
+  padding-top: 0.5rem;
+}
+
+.info {
+  color: white;
+}
+
+a:link,
+a:visited {
+  color: white;
+}

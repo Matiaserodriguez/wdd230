@@ -1,33 +1,21 @@
-const dayNames = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Sutarday",
-];
+// get the Current Date
+const today = new Date();
 
-const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
+// get the day, month and year
+const day = today.getDate();
+const month = today.getMonth() + 1;
+const year = today.getFullYear();
 
-const todaysDate = new Date();
-const dayName = dayNames[todaysDate.getDay()];
-const monthName = months[todaysDate.getMonth()];
-const year = todaysDate.getFullYear();
+console.log(`${day} ${month} ${year}`);
 
-const currentDate = `Today's date is ${dayName} ${todaysDate.getDate()}/${monthName}/${year}`;
+// get the hours, minutes and seconds
+const hours = today.getHours();
+const minutes = today.getMinutes();
+const seconds = today.getSeconds();
 
-document.getElementById("date-and-time").textContent = currentDate;
+// takes the last-updated class from html
+const lastUpdated = document.querySelector(".last-updated");
+
+document.getElementById("date-and-time").textContent = year;
+
+lastUpdated.textContent = `Last Updated ${month}/${day}/${year} ${hours}:${minutes}:${seconds}`;
