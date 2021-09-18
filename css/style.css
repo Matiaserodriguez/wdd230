@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
+
 header {
   background-color: #2565ae;
   height: 125px;
   border-radius: 25px;
+  font-family: Cairo, sans-serif;
 }
 
 img {
@@ -28,6 +31,7 @@ h1 {
 
 h2 {
   padding-left: 50px;
+  font-family: Cairo;
 }
 
 ul {
