@@ -1,13 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
+body {
+  margin: 0 auto;
+  max-width: 750px;
+}
 
 header {
   background-color: #2565ae;
+  width: 750px;
   height: 125px;
   border-radius: 25px;
-  font-family: Cairo, sans-serif;
+  text-align: center;
 }
 
-img {
+header img {
   width: 200px;
   float: right;
   padding: 1rem 1rem;
@@ -17,9 +21,10 @@ img {
 
 footer {
   text-align: center;
+  width: 750px;
   border-radius: 25px;
   background-color: #2565ae;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
 }
 
 h1 {
@@ -27,11 +32,12 @@ h1 {
   line-height: 125px;
   color: white;
   font-size: 40px;
+  font-family: "Nunito", sans-serif;
 }
 
 h2 {
   padding-left: 50px;
-  font-family: Cairo;
+  font-family: "Nunito", sans-serif;
 }
 
 ul {
