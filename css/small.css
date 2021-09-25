@@ -49,7 +49,13 @@ ul {
   color: white;
 }
 
-a:link,
-a:visited {
+main a:link,
+main a:visited {
+  margin: 0.2rem 0;
+  color: royalblue;
+}
+
+footer a:link,
+footer a:visited {
   color: white;
 }

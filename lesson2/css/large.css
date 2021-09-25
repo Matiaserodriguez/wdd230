@@ -1,6 +1,15 @@
 @media only screen and (min-width: 60em) {
+  body {
+    padding: 0 25px;
+  }
+
   main {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  header,
+  footer {
+    border-radius: 20px;
   }
 
   h1 {
