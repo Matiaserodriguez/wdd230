@@ -1,0 +1,8 @@
+@media only screen and (min-width: 60em) {
+  nav ul li a {
+    font-size: 1.1rem;
+  }
+  footer {
+    border-radius: 0.5rem;
+  }
+}
