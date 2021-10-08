@@ -1,0 +1,13 @@
+@media only screen and (min-width: 60em) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  .motto {
+    font-size: large;
+  }
+
+  picture img {
+    width: 200px;
+    align-items: center;
+  }
+}

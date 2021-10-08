@@ -1,0 +1,92 @@
+img {
+  width: 100%;
+}
+
+picture img {
+  width: 100px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #2565ae9f;
+  align-items: center;
+}
+
+header .headings {
+  flex-direction: column;
+  margin-left: 3em;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bolder;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.motto {
+  font-style: italic;
+  color: #3f3d56;
+  font-size: small;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  background-color: #2565ae;
+  padding: 0.1rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.navigation li {
+  display: none;
+  padding: 0.6rem 0;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.responsive li {
+  display: block;
+}
+
+main h2 {
+  text-align: center;
+  color: #2565ae;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.placeholder {
+  padding: 0.5rem;
+  border: dashed rgba(0, 0, 0, 0.479);
+  background-color: rgba(235, 235, 235, 0.418);
+  margin: 0.5rem 0;
+  font-family: "Poppins", sans-serif;
+  color: rgba(0, 0, 0, 0.479);
+}
+
+footer {
+  background-color: #2565ae;
+  width: 100%;
+  text-align: center;
+  padding: 0.6rem 0;
+  color: white;
+  margin-top: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.formatted-time {
+  padding-top: 0.8rem;
+}
+
+footer a:link,
+footer a:visited {
+  color: white;
+}
