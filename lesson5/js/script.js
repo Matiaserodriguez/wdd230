@@ -1,18 +1,36 @@
-const input = document.querySelector("#favchap");
-const button = document.querySelector("button");
-const uList = document.querySelector(".list");
+const today = new Date();
+const year = today.getFullYear();
+const day = today.getDay();
 
-button.addEventListener("click", () => {
-  const li = document.createElement("li");
-  const but = document.createElement("button");
-  li.textContent = input.value;
-  uList.appendChild(li);
-  but.textContent = "❌";
-  li.appendChild(but);
+const options = {
+  weekday: "long",
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+};
 
-  but.onclick = function (e) {
-    uList.removeChild(li);
-  };
+document.querySelector(".formatted-time").textContent =
+  today.toLocaleDateString("en-UK", options);
 
-  input.focus();
-});
+const hamburger = document.querySelector(".ham");
+const mainnav = document.querySelector(".navigation");
+
+hamburger.addEventListener(
+  "click",
+  () => {
+    mainnav.classList.toggle("responsive");
+  },
+  false
+);
+
+window.onresize = () => {
+  if (window.innerWidth > 600) mainnav.classList.remove("responsive");
+};
+
+const banner = () => {
+  document.querySelector(".hide").style.display = "block";
+};
+
+if (day == 5) {
+  banner();
+}
