@@ -72,3 +72,7 @@ li {
     width: 480px;
   }
 }
+
+.wrong-message {
+  display: none;
+}

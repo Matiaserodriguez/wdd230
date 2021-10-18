@@ -12,13 +12,19 @@
     <main>
       <div class="input">
         <label
-          >Enter Book and Chapter<br />
+          >Enter Book and Chapter<br /><i
+            >(Please type First, Second, Third and Fourth Nephi instead of 1, 2,
+            3 or 4 Nephi)</i
+          ><br />
           <input type="text" id="favchap" placeholder="Alma 5" required
         /></label>
         <button type="submit">Add Chapter</button>
       </div>
       <div class="listcontainer">
         <ul class="list"></ul>
+      </div>
+      <div class="wrong-message">
+        Wrong name of the book or Chapter not found
       </div>
     </main>
     <script src="js/script.js"></script>
