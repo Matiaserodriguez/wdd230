@@ -79,9 +79,9 @@
 
   .before-footer img {
     display: inline;
-    width: 200px;
     float: left;
-    margin: 0 50px;
+    margin: 0 50px 0 50px;
+    height: 180px;
   }
 
   .before-footer {

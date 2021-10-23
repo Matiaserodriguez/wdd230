@@ -1,5 +1,5 @@
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 picture img {
@@ -83,7 +83,6 @@ footer a:visited {
 }
 
 .linked {
-  color: darkblueback;
   background-color: #2565ae;
   border: none;
   transition: background-color 0.3s;
