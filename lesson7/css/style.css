@@ -1,0 +1,13 @@
+body {
+  display: block;
+  text-align: center;
+}
+
+article img[data-src] {
+  filter: blur(0.2em);
+}
+
+article img {
+  filter: blur(0em);
+  transition: filter 0.3s;
+}
