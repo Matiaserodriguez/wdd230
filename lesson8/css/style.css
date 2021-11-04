@@ -1,0 +1,98 @@
+img {
+  max-width: 100%;
+}
+
+.logo img {
+  width: 100px;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #2565ae9f;
+  align-items: center;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+header .headings {
+  flex-direction: column;
+  margin-left: 3em;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bolder;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+.motto {
+  font-style: italic;
+  color: #3f3d56;
+  font-size: small;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+table {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+caption {
+  display: none;
+}
+tr:first-child th {
+  font-size: 1.5rem;
+  background-color: rgb(127, 186, 194);
+  color: rgb(0, 0, 0);
+}
+
+a {
+  color: #fff;
+}
+
+th,
+td {
+  padding: 7px 15px;
+  border: solid rgb(191, 190, 195);
+}
+
+th {
+  font-size: 1.1rem;
+  background-color: rgb(98, 140, 165);
+  color: #fff;
+  border: solid rgb(191, 190, 195);
+}
+
+tbody {
+  background-color: rgb(231, 240, 237);
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgb(235, 255, 237);
+}
+
+tfoot {
+  font-size: 0.8rem;
+  background-color: rgb(127, 186, 194);
+}
