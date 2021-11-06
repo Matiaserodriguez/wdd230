@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gallery Page, where we will show images related to the weather."
+    />
+    <title>wd230 - lesson7</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&family=Nunito&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="banner hide">
+      "Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+      park pavilion."
+    </div>
+    <header>
+      <picture class="logo">
+        <img src="images/logo-weather.svg" alt="weather-logo" />
+      </picture>
+      <div class="headings">
+        <h1>Your weather 24</h1>
+        <p class="motto">"More than weather, life"</p>
+      </div>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li>
+          <a class="ham" href="#">≡ Menu</a>
+        </li>
+        <li>
+          <a href="#" class="linked">Home</a>
+        </li>
+        <li>
+          <a
+            href="https://matiaserodriguez.github.io/wdd230/lesson5/preston-5.html"
+            class="linked"
+            >Preston</a
+          >
+        </li>
+        <li>
+          <a href="#" class="linked">Soda Springs</a>
+        </li>
+        <li>
+          <a href="#" class="linked">Fish Heaven</a>
+        </li>
+        <li>
+          <a
+            href="https://matiaserodriguez.github.io/wdd230/lesson8/stormcenter.html"
+            class="linked active"
+            >Storm Center</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://matiaserodriguez.github.io/wdd230/lesson7/gallery-7.html"
+            class="linked"
+            >Gallery</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+        <h2>Storm Reporting</h2>
+
+        <div class="container">
+
+      <form method="get" action="thanks.html">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label class="top">Full Name* <input type="text" name="fname" pattern="[A-Za-z]{5,}" required/></label>
+          <label class="top">ZIP Code* <input type="text" name="lname" required/></label>
+          <label class="top">Phone* <input type="tel" name="phone" placeholder="999999999" required/></label>
+          <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"/></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Storm Details</legend>
+          
+          <label class="top">Storm Date <input type="date" name="completeDate"></label>
+
+          
+          <label for="stormList" class="top">Storm's type <input list="stormList" name="storm"/></label>
+          <datalist id="stormList"> 
+           <option value="Flash Flood">
+           <option value="Hail">
+           <option value="Hurricane">
+           <option value="Thunderstorm">
+           <option value="Tornado">
+           </datalist>
+
+            <label class="sbs" for="rating">Rating: &nbsp;&nbsp;&nbsp;
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span></label>
+
+            <label class="top">Storm Region <select type="subject">
+                <option value="" >Please Select &#9662;</option>
+                <option value="Preston">Preston</option>
+                <option value="Soda Spring">Soda Spring</option>
+                <option value="Fish Haven">Fish Haven</option>
+            </label></select>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Info</legend>
+
+            <div>Are you in danger?</div> 
+            <label class="sbs"><input type="radio" name="audience" value="Yes"/> Yes</label>
+            <label class="sbs"><input type="radio" name="audience" value="No"/> No</label>
+            <label class="sbs"><input type="radio" name="audience" value="Maybe" /> Maybe</label>
+
+            <label class="top">Add some Comments</label><textarea id="comments" name="comments"></textarea>
+
+        </fieldset>
+
+        <input type="submit" value="Report Storm" class="submitBtn">
+      </form>
+    </div>
+    </main>
+
+    <footer>
+      &copy; Your weather 24 |
+      <a class="link" target="_blank" href="https://www.byui.edu/online"
+        >BYU-Idaho Online</a
+      >
+      | Matias E. Rodriguez
+      <div class="formatted-time"></div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

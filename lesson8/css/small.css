@@ -23,6 +23,13 @@ h1 {
   color: #fff;
   font-weight: bolder;
   font-family: "Source Sans Pro", sans-serif;
+  padding-top: 10px;
+}
+
+h2,
+h3 {
+  color: #2565ae;
+  text-align: center;
 }
 
 .motto {
@@ -146,20 +153,90 @@ footer a:visited {
 
 .container {
   display: grid;
+  width: 96%;
   padding: 10px;
   grid-template-columns: 1fr;
   gap: 1rem;
+  margin: 0 auto;
 }
 
-.card {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-}
-
-.card:hover {
-  box-shadow: 0 0 50px #333;
+.submitBtn:hover {
+  box-shadow: 0 0 25px #333;
 }
 
 .days-visited {
   padding-top: 10px;
+}
+
+#ratingvalue {
+  margin: 0 15px;
+  color: #2075ff;
+}
+
+/*----------- FORM --------------*/
+
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #445ba9;
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+  font-family: "Nunito", sans-serif;
+}
+
+form legend {
+  color: #445ba9;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: #2075ff;
+  font-size: 0.8rem;
+}
+
+form label.top input,
+form label.top select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #555;
+  width: 100%;
+  max-width: 15rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75rem 0;
+  color: #555;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #2075ff;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+#comments {
+  width: 70%;
+  height: 50%;
 }
