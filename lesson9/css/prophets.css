@@ -27,11 +27,12 @@ div {
 .cards {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
+  gap: 15px;
 }
 
 section {
   text-align: center;
+  box-shadow: 0 0 5px #333;
 }
 
 section div {
@@ -39,6 +40,7 @@ section div {
 }
 section img {
   width: 90%;
+  box-shadow: 0 0 7px rgb(34, 34, 34);
 }
 
 section:hover {
