@@ -94,19 +94,25 @@
 
   .the-section {
     grid-template-columns: 1fr;
+    padding: 50px;
   }
 
   .card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 
-  .card:nth-child(even) .par-card {
-    grid-column: 2;
+  .card:nth-child(odd) {
+    flex-direction: row-reverse;
   }
 
-  .card:nth-child(even) img {
-    grid-column: 1;
-    grid-row: 1;
+  .par-card .motto-card h2 {
+    display: block;
+  }
+
+  .card img {
+    max-width: 250px;
   }
 }

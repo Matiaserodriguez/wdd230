@@ -44,6 +44,20 @@ nav a {
   font-family: "Poppins", sans-serif;
 }
 
+main a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #7294bb;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+}
+
+main li {
+  text-align: center;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
 .navigation li {
   display: none;
   padding: 0.6rem 0;
@@ -61,6 +75,7 @@ main h2 {
   text-align: center;
   color: #2565ae;
   font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 2px;
 }
 
 footer {
@@ -203,7 +218,6 @@ footer a:visited {
 .banner {
   display: flex;
   font-family: "Nunito", sans-serif;
-  width: 100%;
   padding: 10px;
   align-items: center;
   justify-content: center;
@@ -221,16 +235,15 @@ footer a:visited {
   text-align: center;
   gap: 10px;
   margin: 20px 0;
-  width: 95%;
   margin: 0 auto;
   padding: 20px;
   color: white;
 }
 
-.the-section div {
+.the-section .card {
   background-color: #2565ae;
   box-shadow: 0 0 7px rgb(34, 34, 34);
-  padding: 5px;
+  padding: 1rem;
 }
 
 .the-section h2 {

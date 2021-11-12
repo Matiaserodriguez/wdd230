@@ -37,7 +37,7 @@ if (day == 5) {
   banner();
 }
 
-const townApi = async (key, value) => {
+const townApi = async (key, value, nameImage) => {
   try {
     const response = await fetch(`${baseURL}`);
     const wholeResponse = await response.json();
@@ -49,6 +49,7 @@ const townApi = async (key, value) => {
 
         const theCard = document.createElement("div");
         theCard.setAttribute("class", "card");
+        let information = document.createElement("div");
         let h2 = document.createElement("h2");
         let motto = document.createElement("p");
         motto.setAttribute("class", "motto-card");
@@ -64,13 +65,15 @@ const townApi = async (key, value) => {
         yearFounded.innerHTML = `Year Founded: ${element.yearFounded}`;
         population.innerHTML = `Population: ${element.currentPopulation}`;
         averageRainFall.innerHTML = `Annual Rain Fall: ${element.averageRainfall}`;
-        image.setAttribute("src", element.photo);
+        image.setAttribute("src", `images/${nameImage}`);
         image.setAttribute("alt", `${element.name}'s photo`);
-        theCard.appendChild(h2);
-        theCard.appendChild(motto);
-        theCard.appendChild(yearFounded);
-        theCard.appendChild(population);
-        theCard.appendChild(averageRainFall);
+        image.setAttribute("class", "card-photo");
+        information.appendChild(h2);
+        information.appendChild(motto);
+        information.appendChild(yearFounded);
+        information.appendChild(population);
+        information.appendChild(averageRainFall);
+        theCard.appendChild(information);
         theCard.appendChild(image);
         document.querySelector("section.the-section").appendChild(theCard);
       }
@@ -81,6 +84,6 @@ const townApi = async (key, value) => {
   }
 };
 
-townApi("towns", "Fish Haven");
-townApi("towns", "Preston");
-townApi("towns", "Soda Springs");
+townApi("towns", "Fish Haven", "fish-haven.webp");
+townApi("towns", "Preston", "preston.webp");
+townApi("towns", "Soda Springs", "soda-idaho.webp");

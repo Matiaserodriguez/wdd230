@@ -20,6 +20,10 @@
   }
 
   .card {
-    display: block;
+    flex-direction: column;
+  }
+
+  .card:nth-child(odd) {
+    flex-direction: column-reverse;
   }
 }
