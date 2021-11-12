@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gallery Page, where we will show images related to the weather."
+    />
+    <title>wd230 - lesson7</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <div class="banner hide">
+      "Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+      park pavilion."
+    </div>
+    <header>
+      <picture class="logo">
+        <img src="images/logo-weather.svg" alt="weather-logo" />
+      </picture>
+      <div class="headings">
+        <h1>Your weather 24</h1>
+        <p class="motto">"More than weather, life"</p>
+      </div>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li>
+          <a class="ham" href="#">≡ Menu</a>
+        </li>
+        <li>
+          <a
+            href="https://matiaserodriguez.github.io/wdd230/lesson9/index.html"
+            class="linked active"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://matiaserodriguez.github.io/wdd230/lesson5/preston-5.html"
+            class="linked"
+            >Preston</a
+          >
+        </li>
+        <li>
+          <a href="#" class="linked">Soda Springs</a>
+        </li>
+        <li>
+          <a href="#" class="linked">Fish Heaven</a>
+        </li>
+        <li>
+          <a
+            href="https://matiaserodriguez.github.io/wdd230/lesson8/stormcenter.html"
+            class="linked"
+            >Storm Center</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://matiaserodriguez.github.io/wdd230/lesson7/gallery-7.html"
+            class="linked"
+            >Gallery</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Home Page</h2>
+      <section class="float-img">
+        <picture>
+          <source
+            media="(min-width: 500px) and (max-width: 799px)"
+            srcset="images/heroHome-800.webp"
+          />
+          <source
+            media="(min-width: 800px)"
+            srcset="images/heroHome-1200.webp"
+          />
+          <img src="images/heroHome-480.webp" alt="town image" />
+        </picture>
+        <div class="floated">
+          <h3>Weather Summary</h3>
+          <p>Currently: Sunny</p>
+          <p>Hight: <span class="hight">50</span> °F</p>
+          <p>Wind Chill: <span class="windchill"></span>°F</p>
+          <p>Humidity: 69%</p>
+          <p>Wind speed: <span class="wind">12</span>mph</p>
+        </div>
+      </section>
+
+      <section class="the-section"></section>
+
+      <div class="before-footer">
+        <img src="images/preston-idaho.webp" alt="preston-idaho" />
+        <h4>Your Weather 24</h4>
+        <p>🏙 30 N 1 st E <br />Preston, ID 83263</p>
+        <p>📞 999-999-9999</p>
+        <p>✉ yourweather24@weather.com</p>
+      </div>
+    </main>
+
+    <footer>
+      &copy; Your weather 24 |
+      <a class="link" target="_blank" href="https://www.byui.edu/online"
+        >BYU-Idaho Online</a
+      >
+      | Matias E. Rodriguez
+      <div class="formatted-time"></div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: [
+            "Ubuntu",
+            "Poppins",
+            "Source Sans Pro",
+            "Cairo",
+            "Nunito",
+            "Rubik",
+          ],
+        },
+      });
+    </script>
+  </body>
+</html>
