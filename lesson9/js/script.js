@@ -47,11 +47,11 @@ const townApi = async (key, value) => {
         console.log(element.photo);
         console.log(typeof element.photo);
 
-        const theCard = document.createElement("section");
-        theCard.setAttribute("class", "Card");
+        const theCard = document.createElement("div");
+        theCard.setAttribute("class", "card");
         let h2 = document.createElement("h2");
         let motto = document.createElement("p");
-        motto.setAttribute("class", "par-card");
+        motto.setAttribute("class", "motto-card");
         let yearFounded = document.createElement("p");
         yearFounded.setAttribute("class", "par-card");
         let population = document.createElement("p");
@@ -61,9 +61,9 @@ const townApi = async (key, value) => {
         let image = document.createElement("img");
         h2.innerHTML = element.name;
         motto.innerHTML = element.motto;
-        yearFounded.innerHTML = element.yearFounded;
-        population.innerHTML = element.currentPopulation;
-        averageRainFall.innerHTML = element.averageRainfall;
+        yearFounded.innerHTML = `Year Founded: ${element.yearFounded}`;
+        population.innerHTML = `Population: ${element.currentPopulation}`;
+        averageRainFall.innerHTML = `Annual Rain Fall: ${element.averageRainfall}`;
         image.setAttribute("src", element.photo);
         image.setAttribute("alt", `${element.name}'s photo`);
         theCard.appendChild(h2);

@@ -91,4 +91,22 @@
     text-align: start;
     padding: 40px;
   }
+
+  .the-section {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card:nth-child(even) .par-card {
+    grid-column: 2;
+  }
+
+  .card:nth-child(even) img {
+    grid-column: 1;
+    grid-row: 1;
+  }
 }

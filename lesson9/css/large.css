@@ -14,4 +14,12 @@
   .float-img {
     max-width: 820px;
   }
+
+  .the-section {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card {
+    display: block;
+  }
 }
