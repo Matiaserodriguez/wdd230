@@ -67,7 +67,10 @@
   }
 
   .article-sec {
-    margin: 40px auto;
+    margin: 0px auto;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(34, 34, 34);
   }
 
   .article-sec img {

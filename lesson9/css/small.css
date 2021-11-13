@@ -44,14 +44,6 @@ nav a {
   font-family: "Poppins", sans-serif;
 }
 
-h4 a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #7294bb;
-  font-family: "Poppins", sans-serif;
-  font-size: 0.8rem;
-}
-
 main .wireframe {
   text-align: center;
   margin-top: 10px;
@@ -74,7 +66,6 @@ main h2 {
   text-align: center;
   color: #2565ae;
   font-family: "Source Sans Pro", sans-serif;
-  margin-bottom: 2px;
 }
 
 footer {
