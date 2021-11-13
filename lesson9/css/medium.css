@@ -86,6 +86,8 @@
   }
 
   .before-footer {
+    display: flex;
+    justify-content: space-around;
     border-radius: 25px 25px 0 0;
     width: 80%;
     text-align: start;
