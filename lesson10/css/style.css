@@ -1,0 +1,66 @@
+img {
+  max-width: 100%;
+}
+
+.logo img {
+  width: 100px;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #2565ae9f;
+  align-items: center;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+header .headings {
+  flex-direction: column;
+  margin-left: 3em;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bolder;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+.motto {
+  font-style: italic;
+  color: #3f3d56;
+  font-size: small;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main img {
+  width: 100%;
+}
+
+#shadowed {
+  background-color: rgb(98, 140, 165);
+  color: #fff;
+}
+
+@media only screen and (min-width: 37.5em) {
+  main img {
+    width: 75%;
+  }
+}

@@ -1,0 +1,142 @@
+@media only screen and (min-width: 37.5em) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+
+  nav ul li {
+    display: flex;
+  }
+
+  .motto {
+    font-size: medium;
+  }
+
+  .logo img {
+    width: 150px;
+    align-items: center;
+  }
+
+  .navigation li {
+    display: block;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+  .floated {
+    padding: 1rem;
+    top: 25px;
+  }
+
+  .float-img {
+    max-width: 85%;
+  }
+
+  .float-img img {
+    border-radius: 10px;
+  }
+
+  .floated p {
+    font-size: 15px;
+  }
+
+  .week-time {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+
+  .flex-week {
+    border: 1px solid #333;
+    text-align: center;
+    width: 7rem;
+  }
+
+  .h3-main {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    padding: 20px;
+  }
+
+  .article-sec {
+    margin: 0px auto;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(34, 34, 34);
+  }
+
+  .article-sec img {
+    margin-left: 35px;
+    margin-bottom: 35px;
+    width: 300px;
+    float: right;
+  }
+
+  .before-footer img {
+    display: inline;
+    float: left;
+    margin: 0 50px 0 50px;
+    height: 200px;
+    box-shadow: 0 0 2px rgb(34, 34, 34);
+  }
+
+  .before-footer {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 25px 25px 0 0;
+    width: 80%;
+    text-align: start;
+    padding: 40px;
+  }
+
+  .the-section {
+    grid-template-columns: 1fr;
+    padding: 50px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .card:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .par-card .motto-card h2 {
+    display: block;
+  }
+
+  .card img {
+    max-width: 250px;
+  }
+
+  .container-week {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+  }
+
+  .flex-week {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    border-radius: 50%;
+  }
+
+  .five-day-forecast {
+    margin: 50px auto auto auto;
+    width: 80%;
+    border-radius: 10px;
+  }
+}
