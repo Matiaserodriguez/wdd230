@@ -16,24 +16,6 @@ const apiWeather =
 const forecast =
   "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=cf30318bd54f960f230ff68f267c710d";
 
-// const forecastURI = async () => {
-//   try {
-//     const response = await fetch(forecast);
-//     const wholeResponse = await response.json();
-//     let fiveForecast = wholeResponse.list.filter((item) => {
-//       if (item.dt_txt.includes("18:00:00")) {
-//         const milliseconds = item.dt * 1000;
-//         const dayShort = new Date(milliseconds).toLocaleString("en-US", {
-//           weekday: "short",
-//         });
-//         document.querySelector(`#day${count}`).textContent = dayShort;
-//       }
-//     });
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };
-
 const forecastURI = async () => {
   try {
     const response = await fetch(forecast);
@@ -65,7 +47,6 @@ const weatherApi = async () => {
   try {
     const response = await fetch(apiWeather);
     const wholeResponse = await response.json();
-    let iconName = wholeResponse.weather[0].id;
     let windSpeed = wholeResponse.wind.speed;
     let mainTemp = wholeResponse.main.temp;
     let humidity = wholeResponse.main.humidity;
@@ -91,9 +72,6 @@ const weatherApi = async () => {
     } else {
       calculation.textContent = "N/A";
     }
-    console.log(wholeResponse);
-
-    console.log();
   } catch (error) {
     console.log(error);
   }

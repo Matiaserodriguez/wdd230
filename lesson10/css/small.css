@@ -245,6 +245,7 @@ footer a:visited {
   font-style: italic;
   font-size: 1rem;
   color: rgb(180, 229, 255);
+  text-shadow: 0 0 7px rgb(19, 19, 19);
 }
 
 .container-week {
@@ -274,5 +275,12 @@ footer a:visited {
 .five-day-forecast h3 {
   color: white;
   margin-top: 5px;
+}
 
+.five-day-forecast managed {
+  padding: 5px;
+}
+
+.five-day-forecast a {
+  color: #fff;
 }
