@@ -23,13 +23,6 @@ h1 {
   color: #fff;
   font-weight: bolder;
   font-family: "Source Sans Pro", sans-serif;
-  padding-top: 10px;
-}
-
-h2,
-h3 {
-  color: #2565ae;
-  text-align: center;
 }
 
 .motto {
@@ -49,6 +42,11 @@ nav a {
   font-weight: bold;
   color: white;
   font-family: "Poppins", sans-serif;
+}
+
+main .wireframe {
+  text-align: center;
+  margin-top: 10px;
 }
 
 .navigation li {
@@ -76,7 +74,7 @@ footer {
   text-align: center;
   padding: 0.6rem 0;
   color: white;
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
   font-family: "Poppins", sans-serif;
 }
 
@@ -136,10 +134,80 @@ footer a:visited {
   background-color: #fff;
 }
 
+.float-img {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.floated {
+  width: 10rem;
+  position: absolute;
+  background: #fff;
+  border-radius: 5px;
+  padding: 0.3rem;
+  box-shadow: 0 0 30px rgb(0 0 0);
+  opacity: 0.7;
+  margin: 0px 30px;
+  top: 10px;
+  text-align: center;
+}
+
+.floated h3 {
+  margin-top: 1px;
+  font-size: 15px;
+}
+
+.floated p {
+  font-size: 12px;
+  padding: 0;
+}
+
+.week-time,
+.h3-main {
+  display: none;
+}
+
+.article-sec {
+  background-color: whitesmoke;
+  margin: 40px 0 auto;
+  max-width: 700px;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.article-sec h3 {
+  text-align: center;
+}
+
+.article-sec img {
+  margin: 0px 0px 20px auto;
+  width: 100%;
+  float: right;
+}
+
+.before-footer {
+  box-shadow: 0 0 7px rgb(34, 34, 34);
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  color: #3f3d56;
+  font-family: "Poppins", sans-serif;
+}
+
+.before-footer img {
+  display: none;
+}
+
+.before-footer p h4 {
+  padding: 5px;
+  margin-left: 40px;
+  color: white;
+}
+
 .banner {
   display: flex;
   font-family: "Nunito", sans-serif;
-  width: 100%;
   padding: 10px;
   align-items: center;
   justify-content: center;
@@ -149,6 +217,96 @@ footer a:visited {
 
 .hide {
   display: none;
+}
+
+.the-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  gap: 10px;
+  margin: 20px 0;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+}
+
+.the-section .card {
+  background-color: #2565ae;
+  box-shadow: 0 0 7px rgb(34, 34, 34);
+  padding: 1rem;
+}
+
+.the-section h2 {
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+}
+
+.motto-card {
+  font-style: italic;
+  font-size: 1rem;
+  color: rgb(180, 229, 255);
+  text-shadow: 0 0 7px rgb(19, 19, 19);
+}
+
+.container-week {
+  display: block;
+}
+
+.flex-week {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px #333;
+  row-gap: 5px;
+  background-color: white;
+}
+
+.five-day-forecast {
+  text-align: center;
+  box-shadow: 0 0 5px #333;
+  background-color: #2565ae;
+  padding: 15px;
+  margin-top: 30px;
+  font-family: "Nunito", sans-serif;
+}
+
+.five-day-forecast h3 {
+  color: white;
+  margin-top: 5px;
+}
+
+.five-day-forecast managed {
+  padding: 5px;
+}
+
+.five-day-forecast a {
+  color: #fff;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.card-gallery {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-gallery:hover {
+  box-shadow: 0 0 50px #333;
+}
+
+.days-visited {
+  padding-top: 10px;
 }
 
 .container-storm {
