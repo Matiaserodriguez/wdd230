@@ -19,6 +19,8 @@ const forecast =
 const imagesDataSrc = document.querySelectorAll("img[data-src]");
 const daysVisited = document.querySelector(".days-visited");
 
+const timestamp = today.getTime();
+
 const forecastURI = async () => {
   try {
     const response = await fetch(forecast);
