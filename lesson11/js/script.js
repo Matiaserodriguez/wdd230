@@ -62,8 +62,8 @@ const weatherApi = async () => {
     document.querySelector(".humidity").textContent = humidity;
     document.querySelector(".wind").textContent = windSpeed;
 
-    const farenheit = document.querySelector(".hight").textContent;
-    const wind = document.querySelector(".wind").textContent;
+    const farenheit = mainTemp;
+    const wind = windSpeed;
     let calculation = document.querySelector(".windchill");
 
     const windchill =
