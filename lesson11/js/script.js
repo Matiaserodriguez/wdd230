@@ -10,43 +10,15 @@ const options = {
 };
 
 const baseURL = "https://byui-cit230.github.io/weather/data/towndata.json";
-const apiWeather =
-  "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=cf30318bd54f960f230ff68f267c710d";
-
-const forecast =
-  "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=cf30318bd54f960f230ff68f267c710d";
+let content = document.querySelector('meta[name="Town"]').content;
 
 const imagesDataSrc = document.querySelectorAll("img[data-src]");
 const daysVisited = document.querySelector(".days-visited");
 
 const timestamp = today.getTime();
 
-const forecastURI = async () => {
-  try {
-    const response = await fetch(forecast);
-    const wholeResponse = await response.json();
-    let fiveForecast = wholeResponse.list.filter((item) =>
-      item.dt_txt.includes("18:00:00")
-    );
-    fiveForecast.forEach((item, index) => {
-      let milliseconds = item.dt * 1000;
-      let dayShort = new Date(milliseconds).toLocaleString("en-US", {
-        weekday: "short",
-      });
-      document.querySelector(`#day${index}`).textContent = dayShort;
-      let imagesrc =
-        "https://openweathermap.org/img/w/" + item.weather[0].icon + ".png";
-      document.querySelector(`#img-${index}`).setAttribute("src", imagesrc);
-      let temperature = item.main.temp;
-      document.querySelector(
-        `#temperature${index}`
-      ).textContent = `${temperature}°F`;
-    });
-  } catch (error) {
-    console.log(error);
-  }
-};
-forecastURI();
+apiWeather =
+  "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=cf30318bd54f960f230ff68f267c710d";
 
 const weatherApi = async () => {
   try {
@@ -115,9 +87,6 @@ const townApi = async (key, value, nameImage) => {
     let theList = wholeResponse[key];
     theList.forEach((element) => {
       if (element.name === value) {
-        console.log(element.photo);
-        console.log(typeof element.photo);
-
         const theCard = document.createElement("div");
         theCard.setAttribute("class", "card");
         let information = document.createElement("div");

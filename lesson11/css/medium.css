@@ -155,4 +155,63 @@
   .container-storm {
     width: 400px;
   }
+
+  /*----------- Articles-Preston Town GRID Areas --------------*/
+
+  .articles-town {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "article-town1 article-town2"
+      "article-town1 article-town3";
+    grid-gap: 1.5em;
+    padding: 30px;
+    width: 90%;
+  }
+
+  .articles-town1 .article-town1-fish .article-town1-soda {
+    padding: 2rem 3rem 2rem 3rem;
+  }
+
+  .article-town1 img {
+    display: inline;
+    margin-bottom: 2rem;
+  }
+
+  /*----------- Articles-Soda Springs Town GRID Areas --------------*/
+
+  .articles-town-soda {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "article-town1-soda article-town1-soda"
+      "article-town2-soda article-town3-soda";
+    grid-gap: 1.5em;
+    padding: 30px;
+    width: 90%;
+  }
+  .article-town1-soda img {
+    display: inline;
+    float: left;
+  }
+
+  /*----------- Articles-Fish HAven Town GRID Areas --------------*/
+
+  .articles-town-fish {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "article-town2-fish article-town1-fish"
+      "article-town3-fish article-town1-fish";
+    grid-gap: 1.5em;
+    padding: 30px;
+    width: 90%;
+  }
+  .article-town1-fish img {
+    display: inline;
+    margin-bottom: 2rem;
+  }
 }

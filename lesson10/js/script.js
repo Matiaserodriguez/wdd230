@@ -110,9 +110,6 @@ const townApi = async (key, value, nameImage) => {
     let theList = wholeResponse[key];
     theList.forEach((element) => {
       if (element.name === value) {
-        console.log(element.photo);
-        console.log(typeof element.photo);
-
         const theCard = document.createElement("div");
         theCard.setAttribute("class", "card");
         let information = document.createElement("div");

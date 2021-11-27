@@ -30,4 +30,10 @@
   .flex-week {
     width: 97%;
   }
+
+  .container-gallery {
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
 }

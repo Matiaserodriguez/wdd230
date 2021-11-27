@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Storm Center, a form for alert storms"
-    />
+    <meta name="Town" content="Storm Center" />
+    <meta name="description" content="Storm Center, a form for alert storms" />
+    <link rel="shortcut icon" href="images/favicoweather24.ico" />
     <title>Storm Center - Your Weather 24</title>
     <link
       rel="stylesheet"
@@ -35,9 +34,10 @@
       park pavilion."
     </div>
     <header>
-      <picture class="logo">
-        <img src="images/logo-weather.svg" alt="weather-logo" />
-      </picture>
+      <a href="https://matiaserodriguez.github.io/wdd230/lesson11/index.html">
+        <picture class="logo">
+          <img src="images/logo-weather.svg" alt="weather-logo" /> </picture
+      ></a>
       <div class="headings">
         <h1>Your weather 24</h1>
         <p class="motto">"More than weather, life"</p>
@@ -49,7 +49,11 @@
           <a class="ham" href="#">≡ Menu</a>
         </li>
         <li>
-          <a href="https://matiaserodriguez.github.io/wdd230/lesson11/index.html" class="linked">Home</a>
+          <a
+            href="https://matiaserodriguez.github.io/wdd230/lesson11/index.html"
+            class="linked"
+            >Home</a
+          >
         </li>
         <li>
           <a
@@ -59,10 +63,18 @@
           >
         </li>
         <li>
-          <a href="#" class="linked">Soda Springs</a>
+          <a
+            href="https://matiaserodriguez.github.io/wdd230/lesson11/sodasprings.html"
+            class="linked"
+            >Soda Springs</a
+          >
         </li>
         <li>
-          <a href="#" class="linked">Fish Heaven</a>
+          <a
+            href="https://matiaserodriguez.github.io/wdd230/lesson11/fishhaven.html"
+            class="linked"
+            >Fish Heaven</a
+          >
         </li>
         <li>
           <a
@@ -82,62 +94,95 @@
     </nav>
 
     <main>
-        <h2>Storm Reporting</h2>
+      <h2>Storm Reporting</h2>
 
-        <div class="container-storm">
+      <div class="container-storm">
+        <form method="get" action="thanks.html">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label class="top"
+              >Full Name*
+              <input type="text" name="fname" pattern="[A-Za-z]{5,}" required
+            /></label>
+            <label class="top"
+              >ZIP Code* <input type="text" name="lname" required
+            /></label>
+            <label class="top"
+              >Phone*
+              <input type="tel" name="phone" placeholder="999999999" required
+            /></label>
+            <label class="top"
+              >Email
+              <input type="email" name="email" placeholder="someone@gmail.com"
+            /></label>
+          </fieldset>
 
-      <form method="get" action="thanks.html">
-        <fieldset>
-          <legend>Personal Information</legend>
-          <label class="top">Full Name* <input type="text" name="fname" pattern="[A-Za-z]{5,}" required/></label>
-          <label class="top">ZIP Code* <input type="text" name="lname" required/></label>
-          <label class="top">Phone* <input type="tel" name="phone" placeholder="999999999" required/></label>
-          <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"/></label>
-        </fieldset>
+          <fieldset>
+            <legend>Storm Details</legend>
 
-        <fieldset>
-          <legend>Storm Details</legend>
-          
-          <label class="top">Storm Date <input type="date" name="completeDate"></label>
+            <label class="top"
+              >Storm Date <input type="date" name="completeDate"
+            /></label>
 
-          
-          <label for="stormList" class="top">Storm's type <input list="stormList" name="storm"/></label>
-          <datalist id="stormList"> 
-           <option value="Flash Flood">
-           <option value="Hail">
-           <option value="Hurricane">
-           <option value="Thunderstorm">
-           <option value="Tornado">
-           </datalist>
+            <label for="stormList" class="top"
+              >Storm's type <input list="stormList" name="storm"
+            /></label>
+            <datalist id="stormList">
+              <option value="Flash Flood"></option>
+              <option value="Hail"></option>
+              <option value="Hurricane"></option>
+              <option value="Thunderstorm"></option>
+              <option value="Tornado"></option>
+            </datalist>
 
-            <label class="sbs" for="rating">Rating: &nbsp;&nbsp;&nbsp;
-                <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                <span id="ratingvalue">5</span></label>
+            <label class="sbs" for="rating"
+              >Rating: &nbsp;&nbsp;&nbsp;
+              <input
+                type="range"
+                id="rating"
+                value="5"
+                min="1"
+                max="10"
+                step="1"
+                list="tickmarks"
+                oninput="adjustRating(this.value)"
+                onchange="adjustRating(this.value)"
+              />
+              <span id="ratingvalue">5</span></label
+            >
 
-            <label class="top">Storm Region <select type="subject">
-                <option value="" >Please Select &#9662;</option>
+            <label class="top"
+              >Storm Region
+              <select type="subject">
+                <option value="">Please Select &#9662;</option>
                 <option value="Preston">Preston</option>
                 <option value="Soda Spring">Soda Spring</option>
                 <option value="Fish Haven">Fish Haven</option>
-            </label></select>
+              </select>
+            </label>
+          </fieldset>
 
-        </fieldset>
-
-        <fieldset>
+          <fieldset>
             <legend>Additional Info</legend>
 
-            <div>Are you in danger?</div> 
-            <label class="sbs"><input type="radio" name="audience" value="Yes"/> Yes</label>
-            <label class="sbs"><input type="radio" name="audience" value="No"/> No</label>
-            <label class="sbs"><input type="radio" name="audience" value="Maybe" /> Maybe</label>
+            <div>Are you in danger?</div>
+            <label class="sbs"
+              ><input type="radio" name="audience" value="Yes" /> Yes</label
+            >
+            <label class="sbs"
+              ><input type="radio" name="audience" value="No" /> No</label
+            >
+            <label class="sbs"
+              ><input type="radio" name="audience" value="Maybe" /> Maybe</label
+            >
 
-            <label class="top">Add some Comments</label><textarea id="comments" name="comments"></textarea>
+            <label class="top">Add some Comments</label
+            ><textarea id="comments" name="comments"></textarea>
+          </fieldset>
 
-        </fieldset>
-
-        <input type="submit" value="Report Storm" class="submitBtn">
-      </form>
-    </div>
+          <input type="submit" value="Report Storm" class="submitBtn" />
+        </form>
+      </div>
     </main>
 
     <footer>

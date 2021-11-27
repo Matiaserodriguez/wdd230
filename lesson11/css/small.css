@@ -273,11 +273,14 @@ footer a:visited {
 }
 
 .five-day-forecast h3 {
+  text-shadow: 0 0 7px rgb(19, 19, 19);
   color: white;
   margin-top: 5px;
 }
 
-.five-day-forecast managed {
+.five-day-forecast .managed {
+  text-shadow: 0 0 7px rgb(19, 19, 19);
+  color: #fff;
   padding: 5px;
 }
 
@@ -289,7 +292,7 @@ footer a:visited {
   display: none;
 }
 
-.container {
+.container-gallery {
   display: grid;
   padding: 10px;
   grid-template-columns: 1fr;
@@ -397,4 +400,133 @@ form label.top input:required:valid {
 #comments {
   width: 70%;
   height: 50%;
+}
+
+/*----------- Articles-Preston Town GRID Areas --------------*/
+
+.articles-town {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "article-town1"
+    "article-town2"
+    "article-town3";
+  grid-gap: 1em;
+  padding: 30px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+
+.article-town1 {
+  grid-area: article-town1;
+  box-shadow: 0 0 25px #333;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.article-town1 img {
+  display: none;
+}
+
+.article-town2 {
+  grid-area: article-town2;
+  box-shadow: 0 0 25px #333;
+  border-radius: 1rem;
+  padding: 10px;
+}
+
+.article-town3 {
+  grid-area: article-town3;
+  box-shadow: 0 0 25px #333;
+  border-radius: 1rem;
+  padding: 10px;
+}
+
+/*----------- Articles-Soda Springs Town GRID Areas --------------*/
+
+.articles-town-soda {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "article-town1-soda"
+    "article-town2-soda"
+    "article-town3-soda";
+  grid-gap: 1em;
+  padding: 30px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+
+.article-town1-soda {
+  grid-area: article-town1-soda;
+  box-shadow: 0 0 25px #333;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.article-town1-soda img {
+  display: none;
+}
+
+.article-town2-soda {
+  grid-area: article-town2-soda;
+  box-shadow: 0 0 25px #333;
+  border-radius: 1rem;
+  padding: 10px;
+}
+
+.article-town3-soda {
+  grid-area: article-town3-soda;
+  box-shadow: 0 0 25px #333;
+  border-radius: 1rem;
+  padding: 10px;
+}
+
+/*----------- Articles-Fish Haven Town GRID Areas --------------*/
+
+.articles-town-fish {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "article-town1-fish"
+    "article-town2-fish"
+    "article-town3-fish";
+  grid-gap: 1em;
+  padding: 30px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+
+.article-town1-fish {
+  grid-area: article-town1-fish;
+  box-shadow: 0 0 25px #333;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.article-town1-fish img {
+  display: none;
+}
+
+.article-town2-fish {
+  grid-area: article-town2-fish;
+  box-shadow: 0 0 25px #333;
+  border-radius: 1rem;
+  padding: 10px;
+}
+
+.article-town3-fish {
+  grid-area: article-town3-fish;
+  box-shadow: 0 0 25px #333;
+  border-radius: 1rem;
+  padding: 10px;
 }
