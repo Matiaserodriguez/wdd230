@@ -12,7 +12,7 @@
     },
     {
       "name": "Don Pablo",
-      "logo": "dia.png",
+      "logo": "don-pablo.png",
       "link": "https://www.instagram.com/don.pablo.almacen/?hl=es"
     },
     {
@@ -26,14 +26,14 @@
       "link": "https://www.carrefour.com.ar/"
     },
     {
-      "name": "DIA",
-      "logo": "dia.png",
-      "link": "Madrid, Spain"
+      "name": "Panadería Maná",
+      "logo": "pan-mana.png",
+      "link": "https://www.google.com/search?q=panaderia%20man%C3%A1&rlz=1C1VDKB_esAR928AR928&oq=Panaderia+man%C3%A1&aqs=chrome.0.0i512j0i22i30l9.4877j0j7&sourceid=chrome&ie=UTF-8&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9&tbm=lcl&sxsrf=AOaemvKs867fCzv80w1MNuC2wTD61YTaYA:1638999432692&rflfq=1&num=10&rldimm=4638341445031075357&lqi=Cg9wYW5hZGVyaWEgbWFuw6FIn4bepZiWgIAIWhkQABABGAAYASIPcGFuYWRlcmlhIG1hbsOhkgEGYmFrZXJ5qgEXEAEqEyIPcGFuYWRlcmlhIG1hbsOhKA4&phdesc=niMrvttg69c&ved=2ahUKEwiK6uLXlNX0AhW8ppUCHfD6AgcQvS56BAgFEDI&rlst=f#rlfi=hd:;si:4638341445031075357,l,Cg9wYW5hZGVyaWEgbWFuw6FIn4bepZiWgIAIWhkQABABGAAYASIPcGFuYWRlcmlhIG1hbsOhkgEGYmFrZXJ5qgEXEAEqEyIPcGFuYWRlcmlhIG1hbsOhKA4,y,niMrvttg69c;mv:[[-34.4505079,-58.2622603],[-34.8578306,-58.637457]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9"
     },
     {
-      "name": "DIA",
-      "logo": "dia.png",
-      "link": "Madrid, Spain"
+      "name": "Dietéticas Tomy",
+      "logo": "tomy.png",
+      "link": "https://www.dieteticastomy.com.ar/"
     }
   ]
 }
