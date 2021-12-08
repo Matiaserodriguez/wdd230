@@ -31,7 +31,7 @@ const storesJSON = async (key) => {
       h3.innerHTML = element.name;
       image.setAttribute("src", `images/${element.logo}`);
       image.setAttribute("alt", `${element.name}'s photo`);
-      link.innerHTML = `<a href="${element.link}">Link to the page<a>`;
+      link.innerHTML = `<a href="${element.link}">${element.name}'s page<a>`;
       // image.setAttribute("class", "card-photo");
       theCard.appendChild(h3);
       theCard.appendChild(image);
