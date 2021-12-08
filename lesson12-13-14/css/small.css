@@ -22,7 +22,6 @@ h1 {
 
 .navbar {
   background-color: #161a1d;
-  width: 100vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -91,7 +90,7 @@ h1 {
   display: flex;
   justify-items: center;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
   color: white;
   text-align: center;
   align-items: center;
