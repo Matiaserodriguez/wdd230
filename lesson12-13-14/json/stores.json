@@ -1,0 +1,39 @@
+{
+  "stores": [
+    {
+      "name": "DIA",
+      "logo": "dia.jpg",
+      "link": "https://diaonline.supermercadosdia.com.ar/"
+    },
+    {
+      "name": "Don Victor",
+      "logo": "don-victor.jpg",
+      "link": "https://www.instagram.com/fiambreriadonvictor/?hl=es"
+    },
+    {
+      "name": "Don Pablo",
+      "logo": "dia.jpg",
+      "link": "https://www.instagram.com/don.pablo.almacen/?hl=es"
+    },
+    {
+      "name": "Chiqui Pollo",
+      "logo": "chiqui-pollo.jpg",
+      "link": "https://www.instagram.com/chiquipollo_2020/?hl=es"
+    },
+    {
+      "name": "Carrefour Express",
+      "logo": "carrefour.jpg",
+      "link": "https://www.carrefour.com.ar/"
+    },
+    {
+      "name": "DIA",
+      "logo": "dia.jpg",
+      "link": "Madrid, Spain"
+    },
+    {
+      "name": "DIA",
+      "logo": "dia.jpg",
+      "link": "Madrid, Spain"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+img {
+  width: 100%;
+}
+
+main {
+  background: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42));
+}
+
+h1 {
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+  /* background: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42)); */
+  margin: 0;
+  padding: 15px;
+  color: #fff;
+}
+
+.logo-image {
+  padding: 20px;
+  width: 40px;
+}
+
+.navbar {
+  background-color: #161a1d;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.navbar-items {
+  font-family: "Mukta", sans-serif;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.navbar-items li {
+  display: none;
+}
+
+.navbar-items li a {
+  margin: 10px;
+  padding: 5px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-items li:hover a {
+  background-color: rgba(51, 51, 51, 0.3);
+
+  transition: 0.4s;
+}
+
+.navbar-items li:first-child {
+  display: block;
+}
+
+.responsive li {
+  display: block;
+}
+
+.active a {
+  background-color: rgba(51, 51, 51, 0.3);
+}
+
+.circle {
+  height: 75px;
+  width: 75px;
+  border: #ba181b;
+  border-radius: 50px;
+}
+
+.first-home {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 50px;
+  justify-items: center;
+  font-family: "Mukta", sans-serif;
+  /* background: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42)); */
+}
+
+.brand-purpose {
+  color: #fff;
+  text-align: center;
+}
+
+.social-media {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 30px;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+
+.card {
+  background-color: rgba(51, 25, 25, 0.3);
+  padding: 10px;
+  text-align: center;
+  font-family: "Mukta", sans-serif;
+}
+
+.card h3 {
+  font-family: "Outfit", sans-serif;
+}
+
+.container-home {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.stores-section {
+  color: #fff;
+}
+
+.stores-section h2 {
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+  margin-top: 0;
+}
