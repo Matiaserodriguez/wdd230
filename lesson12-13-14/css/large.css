@@ -10,6 +10,7 @@
   .first-home {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: end;
   }
 
   .social-media {

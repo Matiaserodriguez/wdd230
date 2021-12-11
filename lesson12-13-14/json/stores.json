@@ -16,6 +16,11 @@
       "link": "https://www.carrefour.com.ar/"
     },
     {
+      "name": "Chiqui Pollo",
+      "logo": "chiqui-pollo.png",
+      "link": "https://www.instagram.com/chiquipollo_2020/?hl=es"
+    },
+    {
       "name": "Don Victor",
       "logo": "don-victor.png",
       "link": "https://www.instagram.com/fiambreriadonvictor/?hl=es"
@@ -24,11 +29,6 @@
       "name": "Don Pablo",
       "logo": "don-pablo.png",
       "link": "https://www.instagram.com/don.pablo.almacen/?hl=es"
-    },
-    {
-      "name": "Chiqui Pollo",
-      "logo": "chiqui-pollo.png",
-      "link": "https://www.instagram.com/chiquipollo_2020/?hl=es"
     },
     {
       "name": "Panadería Maná",

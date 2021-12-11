@@ -2,6 +2,7 @@ img {
   width: 100%;
 }
 
+header,
 main {
   background: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42));
 }
@@ -59,6 +60,7 @@ h1 {
 
 .responsive li {
   display: block;
+  padding: 6px;
 }
 
 .active a {
@@ -77,8 +79,9 @@ h1 {
   grid-template-columns: 1fr;
   padding: 50px;
   justify-items: center;
+  align-items: center;
   font-family: "Mukta", sans-serif;
-  /* background: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42)); */
+  text-align: center;
 }
 
 .brand-purpose {
@@ -93,7 +96,15 @@ h1 {
   gap: 10px;
   color: white;
   text-align: center;
-  align-items: center;
+  justify-content: center;
+}
+
+.button-form-home a {
+  color: #fff;
+}
+
+.circle:hover {
+  box-shadow: 0 0 20px rgb(0, 0, 0);
 }
 
 .card {
@@ -122,11 +133,81 @@ h1 {
 }
 
 .stores-section {
+  padding: 30px;
   color: #fff;
 }
 
 .stores-section h2 {
   font-family: "Outfit", sans-serif;
   text-align: center;
+}
+
+.slider p {
+  font-size: 10px;
+  color: white;
+  text-align: center;
+}
+
+footer {
+  background-color: #161a1d;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer h2 {
   margin-top: 0;
+  background-color: #161a1d;
+}
+
+footer a {
+  color: #fff;
+}
+
+.button-form-home {
+  color: #fff;
+  padding: 30px;
+}
+
+.weather-conditions {
+  text-align: center;
+  color: #fff;
+  display: inline;
+}
+
+.container-weather {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.container-weather div {
+  background-color: rgba(37, 43, 73, 0.3);
+  box-shadow: 0 0 15px rgb(24, 24, 24);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#today1 {
+  background-color: rgba(51, 25, 25, 0.3);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  color: #fff;
+  padding: 5px;
+}
+
+#today1 p {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+#today1 img {
+  max-width: 50px;
 }

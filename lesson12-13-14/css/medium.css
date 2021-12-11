@@ -23,5 +23,11 @@
   }
 
   .social-media {
-    gap: 20px;}
+    gap: 20px;
+  }
+
+  .slider {
+    width: 75vw;
+    margin: 0 auto;
+  }
 }

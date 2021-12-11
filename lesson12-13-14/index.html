@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <meta name="Town" content="Home" /> -->
+    <meta name="Page" content="Home" />
     <meta
       name="description"
       content="Home page, includes all the stores' information"
     />
-    <link rel="shortcut icon" href="images/favicoweather24.ico" />
+    <link rel="shortcut icon" href="images/cocar-logo.png" />
     <title>COCAR - Home</title>
     <link
       rel="stylesheet"
@@ -21,22 +21,33 @@
   </head>
 
   <body>
-    <nav class="navbar">
-      <div>
-        <a
-          href="https://matiaserodriguez.github.io/wdd230/lesson12-13-14/index.html"
-          ><img class="logo-image" src="images/cocar.png" alt="cocar-logo"
-        /></a>
+    <header>
+      <nav class="navbar">
+        <div>
+          <a
+            href="https://matiaserodriguez.github.io/wdd230/lesson12-13-14/index.html"
+            ><img class="logo-image" src="images/cocar.png" alt="cocar-logo"
+          /></a>
+        </div>
+        <ul class="navbar-items">
+          <li><a class="ham" href="#">≡ MENU</a></li>
+          <li class="linked active"><a href="#">HOME</a></li>
+          <li class="linked"><a href="#">CITY</a></li>
+          <li class="linked"><a href="#">JOIN</a></li>
+          <li class="linked"><a href="#">DIRECTORY</a></li>
+          <li class="linked"><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div id="today1">
+        <img class="imageT" src="images/01d.png" alt="CurrentWeather" />
+        <p>
+          TODAY: Current temperature:
+          <span class="temperatureT"></span> | Humidity:
+          <span class="humidityT"></span> | Description:
+          <span class="descriptionT"></span>
+        </p>
       </div>
-      <ul class="navbar-items">
-        <li><a class="ham" href="#">≡ MENU</a></li>
-        <li class="linked active"><a href="#">HOME</a></li>
-        <li class="linked"><a href="#">CITY</a></li>
-        <li class="linked"><a href="#">JOIN</a></li>
-        <li class="linked"><a href="#">DIRECTORY</a></li>
-        <li class="linked"><a href="#">CONTACT</a></li>
-      </ul>
-    </nav>
+    </header>
 
     <main>
       <h1>COCAR Home Page</h1>
@@ -53,30 +64,65 @@
             membership plan and parcitipate on this network community.
           </p>
         </div>
-        <div class="social-media">
-          <div class="circle">
-            <a href="https://linkedin.com"
-              ><img src="images/linkedin.png" alt="linkedin"
-            /></a>
+        <div>
+          <div class="social-media">
+            <div class="circle">
+              <a href="https://linkedin.com"
+                ><img src="images/linkedin.png" alt="linkedin"
+              /></a>
+            </div>
+            <div class="circle">
+              <a href="https://instagram.com"
+                ><img src="images/instagram.png" alt="isntagram"
+              /></a>
+            </div>
+            <div class="circle">
+              <a href="https://facebook.com"
+                ><img src="images/facebook.png" alt="facebook"
+              /></a>
+            </div>
           </div>
-          <div class="circle">
-            <a href="https://instagram.com"
-              ><img src="images/instagram.png" alt="isntagram"
-            /></a>
-          </div>
-          <div class="circle">
-            <a href="https://facebook.com"
-              ><img src="images/facebook.png" alt="facebook"
-            /></a>
+          <div class="button-form-home">
+            <a
+              href="https://matiaserodriguez.github.io/wdd230/lesson12-13-14/index.html"
+              >Fill out this form and be part of our community!</a
+            >
           </div>
         </div>
       </section>
 
+      <div class="slider">
+        <img src="images/parque-chacabuco1.webp" alt="parque-chacabuco" />
+        <p><i>Municipality's Park</i></p>
+      </div>
+
       <section class="stores-section">
-        <h2>Stores around the corner</h2>
+        <h2>Know these 3 stores around the corner</h2>
         <section class="container-home"></section>
       </section>
+
+      <section class="weather-conditions">
+        <h3>3 DAY FORECAST</h3>
+        <section class="container-weather"></section>
+      </section>
     </main>
+
+    <footer>
+      <h2>Wants to chat?</h2>
+      <p>Contact us to: 999-999-9999</p>
+      <p>
+        Follow us on: <a href="https://linkedin.com">LinkedIn</a> |
+        <a href="https://instagram.com">Instagram</a> |
+        <a href="https://facebook.com">Facebook</a>
+      </p>
+      <p>
+        &copy; COCAR |
+        <a class="link" target="_blank" href="https://www.byui.edu/online"
+          >BYU-Idaho Online</a
+        >
+        | Matias E. Rodriguez
+      </p>
+    </footer>
 
     <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
