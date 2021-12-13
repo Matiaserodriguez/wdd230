@@ -8,12 +8,20 @@
   }
 
   .first-home {
-    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+  }
+
+  .first-city {
     grid-template-columns: 1fr 1fr;
     justify-items: end;
   }
 
   .social-media {
     gap: 30px;
+  }
+
+  .events {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

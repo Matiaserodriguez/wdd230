@@ -211,3 +211,144 @@ footer a {
 #today1 img {
   max-width: 50px;
 }
+
+.carrousel {
+  width: 80%;
+  max-width: 90em;
+  padding: 2em;
+  border-radius: 2em;
+  box-shadow: 0 0 15px rgb(24, 24, 24);
+  background-color: rgba(51, 25, 25, 0.3);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carrousel .big-container {
+  width: 500%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  padding: 2em;
+  border-radius: 1.5em;
+  transition: all 0.5s ease;
+  transform: translateX(0%);
+}
+
+.carrousel .img {
+  width: calc(100% / 6);
+  min-height: 10vh;
+  box-shadow: 0 0 15px rgb(24, 24, 24);
+  border-radius: 1em;
+}
+
+.carrousel .points {
+  width: 100%;
+  margin: 1em 0 0;
+  border-radius: 2em;
+  background-color: rgba(75, 80, 144, 0.3);
+  box-shadow: 0 0 15px rgb(24, 24, 24);
+
+  padding: 0.4em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.carrousel .point {
+  width: 2em;
+  height: 2em;
+  background-color: #fff;
+  border-radius: 2em;
+  box-shadow: 0 0 15px rgb(24, 24, 24);
+  margin: auto 10px;
+}
+
+.carrousel .point.active {
+  background-color: rgba(255, 71, 71, 0.3);
+}
+
+.first-city {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 50px;
+  gap: 3em;
+  justify-items: center;
+  align-items: center;
+  font-family: "Mukta", sans-serif;
+  text-align: center;
+}
+
+.carrousel .cocar-logo {
+  width: 200px;
+}
+
+.first-city .arg {
+  width: 15em;
+}
+
+.event-section {
+  text-align: center;
+  padding: 50px;
+  color: #fff;
+}
+
+.events {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  gap: 1em;
+}
+
+.card-event {
+  text-align: center;
+  background-color: rgba(255, 71, 71, 0.3);
+  box-shadow: 0 0 15px rgb(24, 24, 24);
+  border-radius: 1em;
+}
+
+.event-section h3 {
+  font-family: "outfit", sans-serif;
+}
+
+.event-section p {
+  font-family: "mukta", sans-serif;
+}
+
+.popup {
+  position: fixed;
+  transform: translate(-50% -50%);
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  display: none;
+}
+
+.image-popup {
+  position: relative;
+  width: 300px;
+  margin: 9em auto;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.button-form {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 2rem;
+  width: 15rem;
+  z-index: 1;
+  cursor: pointer;
+}

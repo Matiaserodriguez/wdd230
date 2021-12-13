@@ -120,3 +120,32 @@ const storesJSON = async (key) => {
 };
 
 storesJSON("stores");
+
+const bigContainer = document.querySelector(".big-container");
+const point = document.querySelectorAll(".point");
+
+point.forEach((element, i) => {
+  point[i].addEventListener("click", () => {
+    let position = i;
+    let operation = position * -20;
+
+    bigContainer.style.transform = `translateX(${operation}%)`;
+    point.forEach((element, i) => {
+      point[i].classList.remove("active");
+    });
+    point[i].classList.add("active");
+  });
+});
+
+const popup = document.querySelector(".popup");
+const close = document.querySelector(".close");
+
+window.onload = () => {
+  setTimeout(() => {
+    popup.style.display = "block";
+  }, 3000);
+};
+
+close.addEventListener("click", () => {
+  popup.style.display = "none";
+});

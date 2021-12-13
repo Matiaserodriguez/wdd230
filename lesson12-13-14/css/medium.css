@@ -30,4 +30,18 @@
     width: 75vw;
     margin: 0 auto;
   }
+
+  .events {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image-popup {
+    position: relative;
+    width: 400px;
+    margin: 5em auto;
+  }
+
+  .button-form {
+    left: 5rem;
+  }
 }
