@@ -137,6 +137,18 @@ point.forEach((element, i) => {
   });
 });
 
+const containerHome = document.querySelector(".container-home");
+const grid = document.querySelector(".grid-directory");
+const list = document.querySelector(".list-directory");
+
+list.addEventListener("click", () => {
+  containerHome.classList.add("directory-list");
+});
+
+grid.addEventListener("click", () => {
+  containerHome.classList.remove("directory-list");
+});
+
 const popup = document.querySelector(".popup");
 const close = document.querySelector(".close");
 

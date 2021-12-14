@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Page" content="Join" />
+    <meta
+      name="description"
+      content="Join page, the form for users to Join the Chamber"
+    />
+    <link rel="shortcut icon" href="images/cocar-logo.png" />
+    <title>COCAR - Join</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div>
+          <a
+            href="https://matiaserodriguez.github.io/wdd230/lesson12-13-14/index.html"
+            ><img class="logo-image" src="images/cocar.png" alt="cocar-logo"
+          /></a>
+        </div>
+        <ul class="navbar-items">
+          <li><a class="ham" href="#">≡ MENU</a></li>
+          <li class="linked">
+            <a
+              href="https://matiaserodriguez.github.io/wdd230/lesson12-13-14/index.html"
+              >HOME</a
+            >
+          </li>
+          <li class="linked">
+            <a
+              href="https://matiaserodriguez.github.io/wdd230/lesson12-13-14/city.html"
+              >CITY</a
+            >
+          </li>
+          <li class="linked active">
+            <a
+              href="https://matiaserodriguez.github.io/wdd230/lesson12-13-14/join.html"
+              >JOIN</a
+            >
+          </li>
+          <li class="linked">
+            <a
+              href="https://matiaserodriguez.github.io/wdd230/lesson12-13-14/directory.html"
+              >DIRECTORY</a
+            >
+          </li>
+          <li class="linked">
+            <a
+              href="https://matiaserodriguez.github.io/wdd230/lesson12-13-14/contact.html"
+              >CONTACT</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div id="today1">
+        <img class="imageT" src="images/01d.png" alt="CurrentWeather" />
+        <p>
+          TODAY: Current temperature:
+          <span class="temperatureT"></span> | Humidity:
+          <span class="humidityT"></span> | Description:
+          <span class="descriptionT"></span>
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <h1>
+        Benefits of joining
+        <img
+          class="cocar-logo"
+          src="images/cocar_full.png"
+          alt="cocal_full_name"
+        />
+      </h1>
+
+      <section class="benefits">
+        <ul>
+          <li>Filtering<img src="images/filtering.webp    " alt="" /></li>
+          <li><img src="images/analysis.webp" alt="" />Analysis</li>
+          <li>Searching<img src="images/searching.webp" alt="" /></li>
+          <li><img src="images/buying.webp" alt="" />More Sales</li>
+        </ul>
+      </section>
+
+      <h2 class="fill-form">Fill out this form and be part of our Family!</h2>
+
+      <div class="container-join">
+        <form method="get" action="thank-you.html">
+          <fieldset>
+            <legend>Your Information</legend>
+            <label class="form-form"
+              >First Name*
+              <input type="text" name="fname" pattern="[A-Za-z]{5,}" required
+            /></label>
+            <label class="form-form"
+              >Last Name* <input type="text" name="lname" required
+            /></label>
+            <label class="form-form"
+              >Email*
+              <input
+                type="email"
+                name="email"
+                placeholder="someone@gmail.com"
+                required
+            /></label>
+            <label class="form-form"
+              >Business Name*
+              <input
+                type="text"
+                name="business Name"
+                pattern="[A-Za-z]{5,}"
+                placeholder="My company Name"
+                required
+            /></label>
+            <label class="form-form"
+              >Title <input type="text" name="title" placeholder="Title"
+            /></label>
+            <label class="form-form"
+              >Cell phone
+              <input type="tel" name="phone" placeholder="9999999999"
+            /></label>
+            <label class="form-form"
+              >Business Address
+              <input type="text" name="address" placeholder="Address 1st 8982"
+            /></label>
+            <label class="form-form"
+              >Business Website
+              <input
+                type="text"
+                name="website"
+                placeholder="https://mydomain.com"
+            /></label>
+            <label class="form-form"
+              >Business Description
+              <input
+                type="text"
+                name="description"
+                placeholder="My business is related to..."
+            /></label>
+          </fieldset>
+          <fieldset>
+            <legend>Choice your membership</legend>
+
+            <div class="form-benefit">Each option has its own benefits</div>
+            <label class="form-down"
+              ><input
+                type="radio"
+                name="membership"
+                value="non-profit"
+                id="membership-nonprofit"
+              />
+              Non-profit ($100)
+              <div class="non-profit" hidden>| Business trainings</div></label
+            >
+            <label class="form-down"
+              ><input
+                type="radio"
+                name="membership"
+                value="bronze"
+                id="membership-bronze"
+              />
+              Bronze ($200)
+              <div class="bronze" hidden>
+                | Directory listings & business trainings.
+              </div></label
+            >
+            <label class="form-down">
+              <input
+                type="radio"
+                name="membership"
+                value="silver"
+                id="membership-silver"
+              />
+              Silver ($400)
+              <div class="silver" hidden>
+                | Directory listings, business trainings & social media posts.
+              </div></label
+            >
+            <label class="form-down"
+              ><input
+                type="radio"
+                name="membership"
+                value="gold"
+                id="membership-gold"
+              />
+              Gold ($1000)
+              <div class="gold" hidden>
+                | Directory listings, business trainings, social media posts,
+                luncheon tickets & sponsorships at 100%
+              </div></label
+            >
+          </fieldset>
+          <input type="submit" value="Submit Application" class="submitBtn" />
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <h2>Wants to chat?</h2>
+      <p>Contact us to: 999-999-9999</p>
+      <p>
+        Follow us on: <a href="https://linkedin.com">LinkedIn</a> |
+        <a href="https://instagram.com">Instagram</a> |
+        <a href="https://facebook.com">Facebook</a>
+      </p>
+      <p>
+        &copy; COCAR |
+        <a class="link" target="_blank" href="https://www.byui.edu/online"
+          >BYU-Idaho Online</a
+        >
+        | Matias E. Rodriguez
+      </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Outfit", "Mukta"],
+        },
+      });
+    </script>
+  </body>
+</html>

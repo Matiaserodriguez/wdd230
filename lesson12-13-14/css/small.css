@@ -107,14 +107,6 @@ h1 {
   box-shadow: 0 0 20px rgb(0, 0, 0);
 }
 
-.card {
-  background-color: rgba(51, 25, 25, 0.3);
-  padding: 10px;
-  text-align: center;
-  font-family: "Mukta", sans-serif;
-  box-shadow: 0 0 15px rgb(24, 24, 24);
-}
-
 .card h3 {
   font-family: "Outfit", sans-serif;
 }
@@ -130,6 +122,54 @@ h1 {
   gap: 1rem;
   width: 70vw;
   margin: 0 auto;
+}
+
+.card {
+  background-color: rgba(51, 25, 25, 0.3);
+  padding: 10px;
+  text-align: center;
+  font-family: "Mukta", sans-serif;
+  box-shadow: 0 0 15px rgb(24, 24, 24);
+}
+
+.grid-directory {
+  cursor: pointer;
+}
+
+.list-directory {
+  cursor: pointer;
+}
+
+.directory-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.directory-list img {
+  width: 100px;
+}
+
+.directory-list .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: small;
+}
+
+.changes-directory {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.changes-directory img {
+  width: 30px;
+  padding: 5px;
+  box-shadow: 0 0 15px rgb(24, 24, 24);
+  border-radius: 5px;
 }
 
 .stores-section {
@@ -351,4 +391,145 @@ footer a {
   width: 15rem;
   z-index: 1;
   cursor: pointer;
+}
+
+.container-join legend {
+  font-size: large;
+  font-family: "outfit", sans-serif;
+  color: white;
+}
+
+form label.form-form {
+  display: block;
+  padding-top: 1rem;
+  color: #fff;
+  font-size: 0.8rem;
+  font-family: "mukta", sans-serif;
+  /* padding-top: 1.2rem; */
+}
+
+.container-join {
+  background-color: rgba(51, 25, 25, 0.3);
+  box-shadow: 0 0 15px rgb(24, 24, 24);
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+.form-form input {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: rgb(255, 255, 255);
+  width: 90%;
+  max-width: 15rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container-join input.submitBtn {
+  border: solid 1px #999;
+  background-color: rgba(0, 0, 0, 0.1);
+
+  color: white;
+  border-radius: 0.2rem;
+  padding: 0.75rem 1.5rem;
+  margin: 2em auto 0 auto;
+  width: 96%;
+  max-width: 15rem;
+
+  cursor: pointer;
+}
+
+/* .container-join input.submitBtn {
+  display: block;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: rgb(255, 255, 255);
+  width: 90%;
+  max-width: 15rem;
+} */
+
+form input.submitBtn:hover {
+  box-shadow: 0 0 15px rgb(24, 24, 24);
+}
+
+form label.form-form input:required {
+  border-left: red solid 6px;
+}
+
+form label.form-form input:required:valid {
+  border-left: green solid 6px;
+}
+
+h1 img {
+  width: 150px;
+}
+
+.form-benefit {
+  color: #fff;
+  padding: 10px;
+}
+
+.form-down {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  color: #fff;
+}
+
+.benefits ul li {
+  display: grid;
+  box-shadow: 0 0 15px rgb(24, 24, 24);
+  padding: 5px;
+}
+
+.benefits ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 70vw;
+  margin: 0 auto;
+  padding: 30px 0;
+  list-style: none;
+}
+
+.benefits li {
+  font-size: 1.5rem;
+  font-family: "outfit", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.fill-form {
+  text-align: center;
+  color: #fff;
+}
+
+#membership-silver:checked ~ .silver {
+  display: block;
+  color: rgba(255, 255, 255, 0.616);
+}
+
+#membership-nonprofit:checked ~ .non-profit {
+  display: block;
+  color: rgba(255, 255, 255, 0.616);
+}
+
+#membership-bronze:checked ~ .bronze {
+  display: block;
+  color: rgba(255, 255, 255, 0.616);
+}
+
+#membership-gold:checked ~ .gold {
+  display: block;
+  color: rgba(255, 255, 255, 0.616);
+}
+
+.thanks-title {
+  margin: 0 0;
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
 }

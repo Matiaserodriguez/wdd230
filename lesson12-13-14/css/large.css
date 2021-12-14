@@ -24,4 +24,12 @@
   .events {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .benefits ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .directory-list .card {
+    font-size: large;
+  }
 }

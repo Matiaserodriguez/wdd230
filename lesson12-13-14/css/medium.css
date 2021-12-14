@@ -44,4 +44,39 @@
   .button-form {
     left: 5rem;
   }
+
+  .container-join {
+    background-color: rgba(51, 25, 25, 0.3);
+    box-shadow: 0 0 15px rgb(24, 24, 24);
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .container-join input.submitBtn {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: 0.75rem;
+    color: rgb(255, 255, 255);
+    width: 90%;
+    max-width: 15rem;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .benefits ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .thanks-title img {
+    width: 400px;
+  }
+
+  .directory-list .card {
+    font-size: medium;
+  }
+
+  .changes-directory {
+    display: flex;
+    flex-direction: row;
 }
