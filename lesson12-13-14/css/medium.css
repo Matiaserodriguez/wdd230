@@ -79,4 +79,5 @@
   .changes-directory {
     display: flex;
     flex-direction: row;
+  }
 }
