@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Page" content="Directory" />
+    <meta name="Page" content="Contact" />
     <meta
       name="description"
-      content="Directory page, the list of the companies joined to the chamber"
+      content="Contact page, how customers or companies can contact us"
     />
     <link rel="shortcut icon" href="images/cocar-logo.png" />
-    <title>COCAR - Directory</title>
+    <title>COCAR - Contact</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -49,13 +49,13 @@
               >JOIN</a
             >
           </li>
-          <li class="linked active">
+          <li class="linked">
             <a
               href="https://matiaserodriguez.github.io/wdd230/lesson12-13-14/directory.html"
               >DIRECTORY</a
             >
           </li>
-          <li class="linked">
+          <li class="linked active">
             <a
               href="https://matiaserodriguez.github.io/wdd230/lesson12-13-14/contact.html"
               >CONTACT</a
@@ -75,18 +75,79 @@
     </header>
 
     <main>
-      <section class="stores-section">
-        <div class="changes-directory">
-          <h2>Know these 7 stores around the corner</h2>
-          <div class="grid-directory">
-            <img src="images/cuadricula.png" alt="grid" />
-          </div>
-          <div class="list-directory">
-            <img src="images/list.png" alt="list" />
-          </div>
-        </div>
-        <div class="container-home"></div>
+      <h1>Where you can find us?</h1>
+
+      <section class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13136.490988109781!2d-58.42875065!3d-34.6010575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1639574946962!5m2!1ses-419!2sar"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
       </section>
+
+      <section class="contact-info">
+        <h2>Contact Information</h2>
+
+        <ul>
+          <li>Phone Number: 999-999-9999</li>
+          <li>Address: Monserrat 892</li>
+          <li>Office: 1st Floor, N° 48</li>
+          <li>Ask For: Anne or Gilbert</li>
+        </ul>
+      </section>
+
+      <section class="the-board">
+        <h2>Director Board</h2>
+        <div class="director-board">
+          <p>• Johnny Lawrence - <i>(Director)</i></p>
+          <p>• Daniel Larusso - <i>(CEO)</i></p>
+          <p>• Anne Shirley - <i>(HR)</i></p>
+          <p>• Gilbert Blythe - <i>(HR)</i></p>
+          <p>• Tory Nichols - <i>(Graphic Designer)</i></p>
+          <p>• John Kreese - <i>(Graphic Designer)</i></p>
+          <p>• Miguel Diaz - <i>(Graphic Designer)</i></p>
+          <p>• Sam Larusso - <i>(Scrum Master)</i></p>
+          <p>• Carmen Diaz - <i>(Scrum Master)</i></p>
+          <p>• Eli Moskowitz - <i>(Developer)</i></p>
+          <p>• Demetri - <i>(Developer)</i></p>
+          <p>• Terry Silver - <i>(Developer)</i></p>
+          <p>• Aisha Robinson - <i>(Developer)</i></p>
+          <p>• Robby Keene - <i>(Developer)</i></p>
+          <p>• Amanda Larusso - <i>(Developer)</i></p>
+        </div>
+      </section>
+
+      <h3 class="h3-contact">
+        Please, leave your information here and we'll get in touch soon
+      </h3>
+
+      <div class="container-join">
+        <form method="get" action="thanks-contact.html">
+          <fieldset>
+            <legend>Questions?</legend>
+            <label class="form-form"
+              >Full Name*
+              <input type="text" name="fname" pattern="[A-Za-z]{5,}" required
+            /></label>
+            <label class="form-form"
+              >Cell phone*
+              <input type="tel" name="phone" placeholder="9999999999" required
+            /></label>
+            <label class="form-form"
+              >Email*
+              <input
+                type="email"
+                name="email"
+                placeholder="someone@gmail.com"
+                required
+            /></label>
+            <label class="form-form">Add some Comments</label>
+            <textarea id="comments" name="comments"></textarea>
+          </fieldset>
+          <input type="submit" value="Submit Application" class="submitBtn" />
+        </form>
+      </div>
     </main>
 
     <footer>

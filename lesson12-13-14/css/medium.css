@@ -62,6 +62,7 @@
     width: 90%;
     max-width: 15rem;
     background-color: rgba(0, 0, 0, 0.1);
+    margin: 2em auto 0 auto;
   }
 
   .benefits ul {
@@ -79,5 +80,19 @@
   .changes-directory {
     display: flex;
     flex-direction: row;
+  }
+
+  iframe {
+    width: 50vw;
+    height: 30vw;
+  }
+
+  .contact-info ul {
+    margin-left: 3rem;
+  }
+
+  .the-board {
+    margin: 0 auto;
+    width: 70vw;
   }
 }

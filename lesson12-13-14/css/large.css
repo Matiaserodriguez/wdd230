@@ -32,4 +32,8 @@
   .directory-list .card {
     font-size: large;
   }
+
+  .contact-info ul {
+    margin-left: 5rem;
+  }
 }

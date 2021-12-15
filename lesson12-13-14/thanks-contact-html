@@ -4,13 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Page" content="Directory" />
-    <meta
-      name="description"
-      content="Directory page, the list of the companies joined to the chamber"
-    />
+    <meta name="Page" content="Join" />
+    <meta name="description" content="Thank page, for applying" />
     <link rel="shortcut icon" href="images/cocar-logo.png" />
-    <title>COCAR - Directory</title>
+    <title>COCAR - Join</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -43,13 +40,13 @@
               >CITY</a
             >
           </li>
-          <li class="linked">
+          <li class="linked active">
             <a
               href="https://matiaserodriguez.github.io/wdd230/lesson12-13-14/join.html"
               >JOIN</a
             >
           </li>
-          <li class="linked active">
+          <li class="linked">
             <a
               href="https://matiaserodriguez.github.io/wdd230/lesson12-13-14/directory.html"
               >DIRECTORY</a
@@ -75,18 +72,13 @@
     </header>
 
     <main>
-      <section class="stores-section">
-        <div class="changes-directory">
-          <h2>Know these 7 stores around the corner</h2>
-          <div class="grid-directory">
-            <img src="images/cuadricula.png" alt="grid" />
-          </div>
-          <div class="list-directory">
-            <img src="images/list.png" alt="list" />
-          </div>
-        </div>
-        <div class="container-home"></div>
-      </section>
+      <h2 class="thanks-title">
+        Thank you very much for your contact!
+      </h2>
+      <h3 class="thanks-title">We'll take a look at it and will reach out to your email soon!</h3>
+      <div class="thanks-title">
+        <img src="images/cocar_full.png" alt="cocar-full" />
+      </div>
     </main>
 
     <footer>

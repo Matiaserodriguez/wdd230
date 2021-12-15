@@ -1,3 +1,18 @@
+const popup = document.querySelector(".popup");
+const close = document.querySelector(".close");
+
+if (document.querySelector('meta[name="Page"]').content == "City") {
+  window.onload = () => {
+    setTimeout(() => {
+      popup.style.display = "block";
+    }, 3000);
+  };
+
+  close.addEventListener("click", () => {
+    popup.style.display = "none";
+  });
+}
+
 const hamburger = document.querySelector(".ham");
 const mainnav = document.querySelector(".navbar-items");
 const baseURL =
@@ -51,7 +66,7 @@ const weatherApi = async () => {
         weekday: "short",
       });
 
-      console.log(element);
+      // console.log(element);
       card.textContent = dayShort;
       max.textContent = `↟ Max: ${element.temp.max}°C`;
       min.textContent = `↡ Min: ${element.temp.min}°C`;
@@ -59,7 +74,7 @@ const weatherApi = async () => {
       card.appendChild(min);
       card.appendChild(max);
 
-      console.log(card);
+      // console.log(card);
 
       let newCard = document.querySelector(".container-weather");
       newCard.appendChild(card);
@@ -124,40 +139,31 @@ storesJSON("stores");
 const bigContainer = document.querySelector(".big-container");
 const point = document.querySelectorAll(".point");
 
-point.forEach((element, i) => {
-  point[i].addEventListener("click", () => {
-    let position = i;
-    let operation = position * -20;
+if (document.querySelector('meta[name="Page"]').content == "City") {
+  point.forEach((element, i) => {
+    point[i].addEventListener("click", () => {
+      let position = i;
+      let operation = position * -20;
 
-    bigContainer.style.transform = `translateX(${operation}%)`;
-    point.forEach((element, i) => {
-      point[i].classList.remove("active");
+      bigContainer.style.transform = `translateX(${operation}%)`;
+      point.forEach((element, i) => {
+        point[i].classList.remove("active");
+      });
+      point[i].classList.add("active");
     });
-    point[i].classList.add("active");
   });
-});
+}
 
 const containerHome = document.querySelector(".container-home");
 const grid = document.querySelector(".grid-directory");
 const list = document.querySelector(".list-directory");
 
-list.addEventListener("click", () => {
-  containerHome.classList.add("directory-list");
-});
+if (document.querySelector('meta[name="Page"]').content == "Directory") {
+  list.addEventListener("click", () => {
+    containerHome.classList.add("directory-list");
+  });
 
-grid.addEventListener("click", () => {
-  containerHome.classList.remove("directory-list");
-});
-
-const popup = document.querySelector(".popup");
-const close = document.querySelector(".close");
-
-window.onload = () => {
-  setTimeout(() => {
-    popup.style.display = "block";
-  }, 3000);
-};
-
-close.addEventListener("click", () => {
-  popup.style.display = "none";
-});
+  grid.addEventListener("click", () => {
+    containerHome.classList.remove("directory-list");
+  });
+}
