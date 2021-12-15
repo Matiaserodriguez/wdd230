@@ -16,7 +16,7 @@ if (document.querySelector('meta[name="Page"]').content == "City") {
 const hamburger = document.querySelector(".ham");
 const mainnav = document.querySelector(".navbar-items");
 const baseURL =
-  "https://matiaserodriguez.github.io/wdd230/lesson12-13-14/json/stores.json";
+  "https://matiaserodriguez.github.io/wdd230/cocar/json/stores.json";
 
 const oneCallApi =
   "https://api.openweathermap.org/data/2.5/onecall?lat=-34.61315&lon=-58.37723&units=metric&exclude=minutely,hourly&appid=cf30318bd54f960f230ff68f267c710d";
